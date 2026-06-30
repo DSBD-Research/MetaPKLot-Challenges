@@ -1,0 +1,40 @@
+Begin: 2025-09-19--23:39:35 End: 2025-09-20--01:15:19 -- Time spent: 1:35:44 
+
+--------------------------------[RUN CONFIG]--------------------------------
+Epochs: 100 - Early stop: 100 - Batch size: 1000 - Image size: [128, 128]
+Train: CNRPark-EXT_PLds - Test: PKLot - Split: 0.7 - Difficult: True
+
+-------------------------------[MODEL CONFIG]-------------------------------
+Model: mobilenet_v3_large - threshold: eer
+Optimizer: Adam - Learning Rate: 0.0001
+
+############################################################################
+
+-------------------------------[ALL RESULTS]--------------------------------
+0.8391 - 0.8908 - 0.8826 - 0.8976 - 0.8986 [THRESHOLDS]
+0.0995 - 0.0861 - 0.1019 - 0.1109 - 0.1005 [VAL LOSS]
+    87 -     71 -     95 -     57 -     68 [EPOCHS]
+0.8985 - 0.9027 - 0.9042 - 0.9049 - 0.9058 [ACCURACY]
+
+-------------------------------[AVG RESULTS]--------------------------------
+ [AVG]  [STD]                                     Confusion matrix - Rounded
+0.8818 0.0221 [THRESHOLD]                                    23403      3825
+0.0998 0.0079 [VAL LOSS]                                      1445     25783
+    75 13.6470 [EPOCH]
+0.9032 0.0026 [ACCURACY]
+
+--------------------------------[BY SUBSET]---------------------------------
+PUCPR:                                            Confusion matrix - Rounded
+0.8996 [ACCURACY]                                            15039      2413
+0.0013 [STD_ACCURACY]                                         1091     16361
+
+UFPR04:                                           Confusion matrix - Rounded
+0.9012 [ACCURACY]                                             3187       613
+0.0088 [STD_ACCURACY]                                          138      3662
+
+UFPR05:                                           Confusion matrix - Rounded
+0.9150 [ACCURACY]                                             5176       800
+0.0067 [STD_ACCURACY]                                          216      5760
+
+############################################################################
+
