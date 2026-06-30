@@ -1,0 +1,59 @@
+Begin: 2025-09-18--00:32:01 End: 2025-09-19--01:08:52 -- Time spent: 1 day, 0:36:51 
+
+--------------------------------[RUN CONFIG]--------------------------------
+Epochs: 50 - Early stop: 50 - Batch size: 1000 - Image size: [128, 128]
+Train: PKLot_PLds - Test: CNRPark-EXT
+
+-------------------------------[MODEL CONFIG]-------------------------------
+Model: mobilenet_v3_large - Loss: CrossEntropyLoss
+Optimizer: Adam - Learning Rate: 0.0001
+
+############################################################################
+
+-------------------------------[ALL RESULTS]--------------------------------
+0.9627 - 0.9631 - 0.9642 - 0.9649 - 0.9657 [ACCURACY]
+
+-------------------------------[AVG RESULTS]--------------------------------
+RESULTS:                                          Confusion matrix - Rounded
+0.9641 [ACCURACY]                                            84442      3047
+0.0011 [STD_ACCURACY]                                         2888     75121
+
+--------------------------------[BY SUBSET]---------------------------------
+CNR-CAMERA-1:                                     Confusion matrix - Rounded
+0.9484 [ACCURACY]                                             8713       456
+0.0032 [STD_ACCURACY]                                          360      6291
+
+CNR-CAMERA-2:                                     Confusion matrix - Rounded
+0.9891 [ACCURACY]                                             2897        17
+0.0017 [STD_ACCURACY]                                           33      1623
+
+CNR-CAMERA-3:                                     Confusion matrix - Rounded
+0.9637 [ACCURACY]                                             5573       302
+0.0028 [STD_ACCURACY]                                           76      4445
+
+CNR-CAMERA-4:                                     Confusion matrix - Rounded
+0.9753 [ACCURACY]                                            10103       231
+0.0013 [STD_ACCURACY]                                          247      8726
+
+CNR-CAMERA-5:                                     Confusion matrix - Rounded
+0.9660 [ACCURACY]                                            12426       542
+0.0026 [STD_ACCURACY]                                          308     11694
+
+CNR-CAMERA-6:                                     Confusion matrix - Rounded
+0.9673 [ACCURACY]                                            11992       520
+0.0010 [STD_ACCURACY]                                          297     12216
+
+CNR-CAMERA-7:                                     Confusion matrix - Rounded
+0.9693 [ACCURACY]                                            11481       490
+0.0017 [STD_ACCURACY]                                          249     11879
+
+CNR-CAMERA-8:                                     Confusion matrix - Rounded
+0.9734 [ACCURACY]                                            12865       197
+0.0014 [STD_ACCURACY]                                          456     11106
+
+CNR-CAMERA-9:                                     Confusion matrix - Rounded
+0.9309 [ACCURACY]                                             8392       292
+0.0014 [STD_ACCURACY]                                          861      7142
+
+############################################################################
+
